@@ -47,9 +47,19 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
-                    <img src="./img/logo.png" class="img-fluid" alt="logo">
+                <div class="col-12 col-sm-6">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 align-self-center">
+                            <img src="./img/logo.png" class="img-fluid" alt="logo">
+                        </div>
+                        <div class="col-12 col-sm-6 align-self-center">
+                            <a class="btn btn-sm btn-warning col-12" href="#reserve">Reserve Table</a>
+                        </div>
+                    </div>
                 </div>
+                <!-- <div class="col-12 col-sm align-self-center">
+                    <img src="./img/logo.png" class="img-fluid" alt="logo">
+                </div> -->
             </div>
         </div>
     </header>
@@ -61,7 +71,7 @@
             </div>
             <div class="col col-sm order-sm-first col-md">
                 <div class="media">
-                    <img src="./img/uthappizza.png" class="d-flex mr-3 img-thumbnail align-self-center" alt="uthappizza">
+                    <img src="./img/uthappizza.png" class="d-flex mr-3 img-thumbnail align-self-center pull-left" alt="uthappizza">
                     <div class="media-body">
                         <h2 class="mt-0">Uthappizza <span class="badge alert-danger">HOT</span> <span class="badge rounded-pill alert-secondary">$4.99</span></h2>
                         <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
@@ -76,8 +86,13 @@
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <div class="media">
+                    <img src="./img/buffet.png" class="d-flex ml-3 img-thumbnail align-self-center pull-right" alt="buffet">
+                    <div class="media-body">
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge alert-danger">NEW</span></h2>
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -87,12 +102,59 @@
             </div>
             <div class="col col-sm order-sm-first col-md">
                 <div class="media">
-                    <img src="./img/alberto.png" class="d-flex mr-3 img-thumbnail align-self-center" alt="alberto">
+                    <img src="./img/alberto.png" class="d-flex mr-3 img-thumbnail align-self-center pull-left" alt="alberto">
                     <div class="media-body">
                         <h2 class="mt-0">Alberto Somayya</h2>
                         <h4>Executive Chef</h4>
                         <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-content">
+        <div class="col-12 col-sm-8 mx-auto">
+            <div class="card" id="reserve">
+                <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+                <div class="card-body">
+                    <form>
+                        <dl class="row">
+                            <dt class="col-12 col-sm-2">Number of Guests</dt>
+                            <dd class="col-12 col-sm-10">
+                                <label>
+                                  <input type="radio" name="options" id="option1" autocomplete="off"> 1
+                               </label>
+                                <label>
+                                  <input type="radio" name="options" id="option2" autocomplete="off"> 2
+                               </label>
+                                <label>
+                               <input type="radio" name="options" id="option3" autocomplete="off"> 3
+                           </label>
+                                <label>
+                               <input type="radio" name="options" id="option4" autocomplete="off"> 4
+                           </label>
+                                <label>
+                               <input type="radio" name="options" id="option5" autocomplete="off"> 5
+                           </label>
+                                <label>
+                               <input type="radio" name="options" id="option6" autocomplete="off"> 6
+                           </label>
+                            </dd>
+                            <dt class="col-12 col-sm-2">Date and Time</dt>
+                            <dd class="col-12 col-sm-10">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" placeholder="Date">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" placeholder="Time">
+                                    </div>
+                                </div>
+                            </dd>
+                        </dl>
+                        <button type="submit" class="btn btn-primary offset-sm-2">Reserve</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -140,9 +202,9 @@
         </div>
     </footer>
 
-    <script src="node_modules\jquery\dist\jquery.min.js"></script>
-    <script src="node_modules\popper.js\dist\popper.min.js"></script>
-    <script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
