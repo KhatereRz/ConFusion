@@ -4,6 +4,7 @@
     "description": "This is a website for Ristorante Con Fusion",
     "main": "index.html",
     "scripts": {
+        "preinstall": "npx npm-force-resolutions",
         "start": "npm run watch:all",
         "test": "echo \"Error: no test specified\" && exit 1",
         "lite": "lite-server",
@@ -16,9 +17,13 @@
         "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
         "build": "npm run clean && npm run copyfonts && npm run imagemin && npm run usemin"
     },
+    "resolutions": {
+        "graceful-fs": "^4.2.4"
+    },
     "author": "",
     "license": "ISC",
     "devDependencies": {
+        "browser-sync": "^2.27.7",
         "cssmin": "^0.4.3",
         "grunt": "^1.4.1",
         "grunt-browser-sync": "^2.2.0",
@@ -31,6 +36,15 @@
         "grunt-contrib-watch": "^1.1.0",
         "grunt-sass": "^3.1.0",
         "grunt-usemin": "^3.1.1",
+        "gulp": "^3.9.1",
+        "gulp-clean-css": "^3.9.3",
+        "gulp-flatmap": "^1.0.2",
+        "gulp-htmlmin": "^4.0.0",
+        "gulp-imagemin": "^4.1.0",
+        "gulp-rev": "^8.1.1",
+        "gulp-sass": "^3.1.0",
+        "gulp-uglify": "^3.0.0",
+        "gulp-usemin": "^0.3.29",
         "htmlmin": "0.0.7",
         "jit-grunt": "^0.10.0",
         "lite-server": "^2.3.0",
@@ -45,9 +59,11 @@
     "dependencies": {
         "bootstrap": "^4.3.1",
         "bootstrap-social": "^5.1.1",
+        "del": "^3.0.0",
         "font-awesome": "^4.7.0",
         "grunt-contrib-uglify": "^5.0.1",
         "grunt-filerev": "^2.3.1",
+        "gulp-cli": "^2.0.1",
         "jquery": "^3.6.0",
         "popper.js": "^1.16.1"
     }
